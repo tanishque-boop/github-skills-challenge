@@ -27,7 +27,7 @@ jobs:
           coverage report -m --fail-under=80
           coverage xml
       - name: Publish coverage to pull request
-        uses: py-cov-action/py-cov-action@v1
+        uses: py-cov-action/py-coverage-action@v1
         with:
           GITHUB_TOKEN: ${{ github.token }}
           
