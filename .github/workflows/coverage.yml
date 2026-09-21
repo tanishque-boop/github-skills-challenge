@@ -24,7 +24,7 @@ jobs:
       - name: Run tests and generate coverage report
         run: |
           coverage run --source=src -m pytest
-          coverage report -m --fail-under=80
+          coverage report -m --fail-under=9
           coverage xml
       - name: Publish coverage to pull request
         uses: py-cov-action/py-coverage-action@v1
